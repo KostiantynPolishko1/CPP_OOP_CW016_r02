@@ -13,12 +13,12 @@ private:
     short _borderHV;//symbol in horizontal and vertical line
 
     CellBorder(short row, short col, short borderHV, char borderE) : 
-        _borderHV(borderHV), _borderE(borderE), Cell2D(row, col) {}
+        Cell2D(row, col), _borderHV(borderHV), _borderE(borderE) {}
 
 public:
-    CellBorder() : _borderHV(0), _borderE(' '), Cell2D() {}
-    CellBorder(const CellBorder& borderX) : _borderHV(borderX._borderHV), _borderE(borderX._borderE),
-        Cell2D(borderX._row, borderX._col) {}
+    CellBorder() : Cell2D(), _borderHV(0), _borderE(' ') {}
+    CellBorder(const CellBorder& borderX) : Cell2D(borderX._row, borderX._col), 
+        _borderHV(borderX._borderHV), _borderE(borderX._borderE) {}
 
     char getBorderHV() const;
     char getBorderE() const;

@@ -9,10 +9,11 @@ protected:
 	short _row;
 	short _col;	
 
+	Cell2D(const Cell2D& p2D) : _row(p2D._row), _col(p2D._col) {}
+
 protected:
 	Cell2D() : _row(0), _col(0) {}
 	Cell2D(short row, short col) : _row(row), _col(col) {}
-	Cell2D(const Cell2D& p2D) : _row(p2D._row), _col(p2D._col) {}
 
 	short getRow() const;
 	short getCol() const;

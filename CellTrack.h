@@ -11,11 +11,11 @@ class CellTrack final:
 private:
     char _track;
 
-    CellTrack(short row, short col, char track) : _track(track), Cell2D(row, col) {}
+    CellTrack(short row, short col, char track) : Cell2D(row, col), _track(track) {}
 
 public:
-    CellTrack() : _track('+'), Cell2D() {}
-    CellTrack(const CellTrack& trackX) : _track(trackX._track), Cell2D(trackX._row, trackX._col) {}
+    CellTrack() : Cell2D(), _track('+') {}
+    CellTrack(const CellTrack& trackX) : Cell2D(trackX._row, trackX._col), _track(trackX._track) {}
 
     char getTrack() const;
 }

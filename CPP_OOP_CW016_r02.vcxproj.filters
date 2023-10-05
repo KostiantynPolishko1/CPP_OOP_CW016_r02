@@ -19,6 +19,12 @@
     <Filter Include="Source Files\Cell2D">
       <UniqueIdentifier>{3f478f29-3003-4d07-85b0-6e7bdccac0f4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Grid">
+      <UniqueIdentifier>{6f34dc17-4c5b-4ee9-8d77-a83624814cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Grid">
+      <UniqueIdentifier>{27bd7370-3fbe-4bb8-828b-426f8a9f10b3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP_OOP_CW016_r02.cpp">
@@ -39,6 +45,12 @@
     <ClCompile Include="CellTrack.cpp">
       <Filter>Source Files\Cell2D</Filter>
     </ClCompile>
+    <ClCompile Include="SizeGrid.cpp">
+      <Filter>Source Files\Grid</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files\Grid</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell2D.h">
@@ -55,6 +67,12 @@
     </ClInclude>
     <ClInclude Include="CellTrack.h">
       <Filter>Header Files\Cell2D</Filter>
+    </ClInclude>
+    <ClInclude Include="SizeGrid.h">
+      <Filter>Header Files\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files\Grid</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

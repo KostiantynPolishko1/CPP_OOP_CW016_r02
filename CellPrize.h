@@ -11,11 +11,11 @@ class CellPrize final:
 private:
     char _prize;
 
-    CellPrize(short row, short col, char prize) : _prize(prize), Cell2D(row, col) {}
+    CellPrize(short row, short col, char prize) : Cell2D(row, col), _prize(prize) {}
 
 public:
-    CellPrize() : _prize('x'), Cell2D() {}
-    CellPrize(const CellPrize& prizeX) : _prize(prizeX._prize), Cell2D(prizeX._row, prizeX._col) {}
+    CellPrize() : Cell2D(), _prize('x') {}
+    CellPrize(const CellPrize& prizeX) : Cell2D(prizeX._row, prizeX._col), _prize(prizeX._prize) {}
 
     char getPrize() const;
 }

@@ -9,15 +9,19 @@ class CellBorder final:
     public Cell2D
 {
 private:
-    char _borderH;
-    char _borderV;
+    char _borderE;//symbol in empty space
+    short _borderHV;//symbol in horizontal and vertical line
 
-    CellBorder() : _borderH('A'), _borderV('1'), Cell2D() {}
-    CellBorder(short row, short col, char borderH, char borderV) : _player(player), Cell2D(row, col) {}
-    CellBorder(const CellPlayer& playerX) : _player(playerX._player), Cell2D(playerX._row, playerX._col) {}
+    CellBorder(short row, short col, short borderHV, char borderE) : 
+        _borderHV(borderHV), _borderE(borderE), Cell2D(row, col) {}
 
-    char getBorderH() const;
-    char getBorderV() const;
+public:
+    CellBorder() : _borderHV(0), _borderE(' '), Cell2D() {}
+    CellBorder(const CellBorder& borderX) : _borderHV(borderX._borderHV), _borderE(borderX._borderE),
+        Cell2D(borderX._row, borderX._col) {}
+
+    char getBorderHV() const;
+    char getBorderE() const;
 }
 ;
 #endif

@@ -36,6 +36,9 @@
     <ClCompile Include="CellBorder.cpp">
       <Filter>Source Files\Cell2D</Filter>
     </ClCompile>
+    <ClCompile Include="CellTrack.cpp">
+      <Filter>Source Files\Cell2D</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell2D.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files\Cell2D</Filter>
     </ClInclude>
     <ClInclude Include="CellBorder.h">
+      <Filter>Header Files\Cell2D</Filter>
+    </ClInclude>
+    <ClInclude Include="CellTrack.h">
       <Filter>Header Files\Cell2D</Filter>
     </ClInclude>
   </ItemGroup>

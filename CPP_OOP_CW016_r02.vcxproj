@@ -131,6 +131,7 @@
     <ClCompile Include="CellBorder.cpp" />
     <ClCompile Include="CellPlayer.cpp" />
     <ClCompile Include="CellPrize.cpp" />
+    <ClCompile Include="CellTrack.cpp" />
     <ClCompile Include="CPP_OOP_CW016_r02.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +139,7 @@
     <ClInclude Include="CellBorder.h" />
     <ClInclude Include="CellPlayer.h" />
     <ClInclude Include="CellPrize.h" />
+    <ClInclude Include="CellTrack.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

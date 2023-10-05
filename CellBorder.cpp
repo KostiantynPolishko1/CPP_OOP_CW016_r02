@@ -1,11 +1,11 @@
 #include "CellBorder.h"
 
-char CellBorder::getBorderH() const
+char CellBorder::getBorderHV() const
 {
-	return _borderH;
+	return _borderHV;
 }
 
-char CellBorder::getBorderV() const
+char CellBorder::getBorderE() const
 {
-	return _borderV;
+	return _borderE;
 }

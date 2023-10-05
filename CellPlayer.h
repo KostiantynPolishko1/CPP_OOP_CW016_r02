@@ -11,9 +11,10 @@ class CellPlayer final:
 private:
     char _player;
 
+    CellPlayer(short row, short col, char player) : _player(player), Cell2D(row, col) {}
+
 public:
     CellPlayer() : _player('x'), Cell2D() {}
-    CellPlayer(short row, short col, char player) : _player(player), Cell2D(row, col) {}
     CellPlayer(const CellPlayer& playerX) : _player(playerX._player), Cell2D(playerX._row, playerX._col) {}
 
     char getPlayer() const;

@@ -16,7 +16,18 @@ private:
     bool checkRAM(char* arr) const;
     void cleanRAM(char** arr, short size);
 
-    Grid(char** arr, short sizeRow, short sizeCol) : SizeGrid(sizeRow, sizeCol), _arrGrid(arr) {}
+    Grid(short sizeRow, short sizeCol) : SizeGrid(sizeRow, sizeCol) {
+        _arrGrid = new char* [sizeRow];
+
+        if (!checkRAM(_arrGrid))
+            for (short i = 0; i < sizeRow; i++) {
+                _arrGrid[i] = new char[sizeCol];
+                if (checkRAM(_arrGrid[i])) {
+                    cleanRAM(_arrGrid, i);
+                    break;
+                }
+            }
+    }
 
 public:
     Grid() : SizeGrid() {
@@ -30,26 +41,25 @@ public:
                     break;
                 }
             }
-        /*else {
-            delete[] _arrGrid;
-            _arrGrid = nullptr;
-        }*/
     }
 
     Grid(const Grid& gridX) : SizeGrid(gridX._sizeRow, gridX._sizeCol), _arrGrid(gridX._arrGrid) {}
 
     ~Grid()
     {
-        if (!_arrGrid)
+        if (_arrGrid){
             for (short i = 0; i < _sizeRow; i++) {
                 if (_arrGrid[i]) {
                     delete[] _arrGrid[i];
                     _arrGrid[i] = nullptr;
                 }
             }
-        delete[] _arrGrid;
-        _arrGrid = nullptr;
+            delete[] _arrGrid;
+            _arrGrid = nullptr;
+        }
     }
+
+    char** getGrid() const;
 }
 ;
 #endif

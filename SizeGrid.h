@@ -15,6 +15,7 @@ protected:
 	SizeGrid() : _sizeRow(12), _sizeCol(12) {}
 	SizeGrid(short sizeRow, short sizeCol) : _sizeRow(sizeRow), _sizeCol(sizeCol) {}
 
+public:
 	short getSizeRow() const;
 	short getSizeCol() const;
 }

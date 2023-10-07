@@ -5,16 +5,15 @@
 
 #include "Cell2D.h"
 
-class CellPrize final:
+class CellPrize:
     public Cell2D
 {
-private:
+protected:
     char _prize;
 
-    CellPrize(short row, short col, char prize) : Cell2D(row, col), _prize(prize) {}
-
-public:
+protected:
     CellPrize() : Cell2D(), _prize('x') {}
+    CellPrize(short row, short col, char prize) : Cell2D(row, col), _prize(prize) {}
     CellPrize(const CellPrize& prizeX) : Cell2D(prizeX._row, prizeX._col), _prize(prizeX._prize) {}
 
     char getPrize() const;

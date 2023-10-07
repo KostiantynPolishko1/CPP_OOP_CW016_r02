@@ -32,3 +32,7 @@ void Grid::cleanRAM(char** arr, short size)
 	}
 }
 ;
+char** Grid::getGrid() const{
+	return _arrGrid;
+}
+;

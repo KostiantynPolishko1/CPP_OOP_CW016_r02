@@ -25,6 +25,12 @@
     <Filter Include="Source Files\Grid">
       <UniqueIdentifier>{27bd7370-3fbe-4bb8-828b-426f8a9f10b3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\GenFunctions">
+      <UniqueIdentifier>{913b8071-df77-4246-9f1f-736f3a64c862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GenFunctions">
+      <UniqueIdentifier>{73f2ac7c-212e-498f-b8d7-5709c8eff465}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CPP_OOP_CW016_r02.cpp">
@@ -51,6 +57,12 @@
     <ClCompile Include="Grid.cpp">
       <Filter>Source Files\Grid</Filter>
     </ClCompile>
+    <ClCompile Include="Prize.cpp">
+      <Filter>Source Files\Cell2D</Filter>
+    </ClCompile>
+    <ClCompile Include="OutPut.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cell2D.h">
@@ -73,6 +85,12 @@
     </ClInclude>
     <ClInclude Include="Grid.h">
       <Filter>Header Files\Grid</Filter>
+    </ClInclude>
+    <ClInclude Include="Prize.h">
+      <Filter>Header Files\Cell2D</Filter>
+    </ClInclude>
+    <ClInclude Include="OutPut.h">
+      <Filter>Header Files\GenFunctions</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

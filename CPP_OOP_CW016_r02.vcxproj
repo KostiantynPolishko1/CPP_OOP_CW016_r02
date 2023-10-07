@@ -134,6 +134,8 @@
     <ClCompile Include="CellTrack.cpp" />
     <ClCompile Include="CPP_OOP_CW016_r02.cpp" />
     <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="OutPut.cpp" />
+    <ClCompile Include="Prize.cpp" />
     <ClCompile Include="SizeGrid.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +145,8 @@
     <ClInclude Include="CellPrize.h" />
     <ClInclude Include="CellTrack.h" />
     <ClInclude Include="Grid.h" />
+    <ClInclude Include="OutPut.h" />
+    <ClInclude Include="Prize.h" />
     <ClInclude Include="SizeGrid.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

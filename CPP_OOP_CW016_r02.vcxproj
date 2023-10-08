@@ -135,6 +135,7 @@
     <ClCompile Include="CPP_OOP_CW016_r02.cpp" />
     <ClCompile Include="GameField.cpp" />
     <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="InPut.cpp" />
     <ClCompile Include="OutPut.cpp" />
     <ClCompile Include="Prize.cpp" />
     <ClCompile Include="SizeGrid.cpp" />
@@ -147,6 +148,7 @@
     <ClInclude Include="CellTrack.h" />
     <ClInclude Include="GameField.h" />
     <ClInclude Include="Grid.h" />
+    <ClInclude Include="InPut.h" />
     <ClInclude Include="OutPut.h" />
     <ClInclude Include="Prize.h" />
     <ClInclude Include="SizeGrid.h" />

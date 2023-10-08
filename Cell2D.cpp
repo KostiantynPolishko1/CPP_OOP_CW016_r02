@@ -8,19 +8,11 @@ short Cell2D::getCol() const {
 	return _col;
 }
 ;
-void Cell2D::usetRow() {
-	_row++;
+void Cell2D::setRow(const short step) {
+	_row += step;
 }
 ;
-void Cell2D::usetCol() {
-	_col++;
-}
-;
-void Cell2D::dsetRow() {
-	_row--;
-}
-;
-void Cell2D::dsetCol() {
-	_col--;
+void Cell2D::setCol(const short step) {
+	_col += step;
 }
 ;

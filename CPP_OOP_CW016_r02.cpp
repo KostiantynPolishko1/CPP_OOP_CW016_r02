@@ -3,6 +3,7 @@
 #include "CellTrack.h"
 #include "CellBorder.h"
 #include "GameField.h"
+#include "InPut.h"
 #include "OutPut.h"
 
 int main()

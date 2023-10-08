@@ -5,7 +5,7 @@
 
 #include "Cell2D.h"
 
-class CellPlayer final:
+class CellPlayer :
     public Cell2D
 {
 private:

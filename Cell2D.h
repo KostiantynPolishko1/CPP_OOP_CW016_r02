@@ -11,15 +11,11 @@ protected:
 
 	Cell2D(const Cell2D& p2D) : _row(p2D._row), _col(p2D._col) {}
 
-protected:
 	Cell2D() : _row(0), _col(0) {}
 	Cell2D(short row, short col) : _row(row), _col(col) {}
 
-	inline void usetRow();
-	inline void usetCol();
-
-	inline void dsetRow();
-	inline void dsetCol();
+	inline void setRow(const short step);
+	inline void setCol(const short step);
 
 public:
 	short getRow() const;

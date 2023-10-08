@@ -15,14 +15,15 @@ protected:
 	Cell2D() : _row(0), _col(0) {}
 	Cell2D(short row, short col) : _row(row), _col(col) {}
 
-	short getRow() const;
-	short getCol() const;
-
 	inline void usetRow();
 	inline void usetCol();
 
 	inline void dsetRow();
 	inline void dsetCol();
+
+public:
+	short getRow() const;
+	short getCol() const;
 }
 ;
 #endif

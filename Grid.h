@@ -6,10 +6,10 @@
 #include <iostream>
 #include "SizeGrid.h"
 
-class Grid final:
+class Grid :
     public SizeGrid
 {
-private:
+protected:
     char** _arrGrid;
 
     bool checkRAM(char** arr) const;
@@ -29,7 +29,7 @@ private:
             }
     }
 
-public:
+protected:
     Grid() : SizeGrid() {
         _arrGrid = new char* [_sizeRow];
 
@@ -59,6 +59,7 @@ public:
         }
     }
 
+public:
     char** getGrid() const;
 }
 ;

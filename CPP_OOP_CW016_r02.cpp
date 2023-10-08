@@ -2,15 +2,18 @@
 #include "Prize.h"
 #include "CellTrack.h"
 #include "CellBorder.h"
-#include "Grid.h"
+#include "GameField.h"
 #include "OutPut.h"
 
 int main()
 {
-	Grid grid;
-	showGrid(grid.getGrid(), grid.getSizeRow(), grid.getSizeCol());
 
-	Prize prize(grid);
+	GameField gameField;
+	Prize prize(gameField);
+	CellPlayer player;
+
+	GameField gameField_c(player, prize);
+	showGrid(gameField_c.getGrid(), gameField.getSizeRow(), gameField.getSizeCol());
 
 	return 0;
 }

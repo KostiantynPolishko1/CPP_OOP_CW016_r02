@@ -61,7 +61,10 @@
       <Filter>Source Files\Cell2D</Filter>
     </ClCompile>
     <ClCompile Include="OutPut.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\GenFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="GameField.cpp">
+      <Filter>Source Files\Grid</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -91,6 +94,9 @@
     </ClInclude>
     <ClInclude Include="OutPut.h">
       <Filter>Header Files\GenFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="GameField.h">
+      <Filter>Header Files\Grid</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
